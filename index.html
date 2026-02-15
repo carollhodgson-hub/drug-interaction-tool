@@ -272,6 +272,116 @@
       ]
     },
 	      /* =========================
+       SSRI + ADDITIONAL COMMON COMBOS
+       ========================= */
+
+    [pairKey("stimulants_rx","ssri")]:{
+      severity:SEVERITY.MOD,
+      summary:"Prescription stimulants + SSRIs can increase jitteriness, anxiety, palpitations, and sleep disruption—especially during dose changes.",
+      mechanism:"Stimulants increase sympathetic activation; SSRIs can be activating for some people early on or after dose adjustments. Sleep loss can amplify agitation and mood instability.",
+      whatToWatch:[
+        "Jitteriness, restlessness, irritability",
+        "Racing heart/palpitations",
+        "Increased anxiety or panic",
+        "Insomnia or worsening sleep"
+      ],
+      harmReduction:[
+        "Avoid stacking other stimulants (caffeine/energy drinks, nicotine binges)",
+        "Prioritize sleep and hydration",
+        "Seek help for chest pain, fainting, or severe panic",
+        "If symptoms worsen after dose changes, consult a clinician"
+      ]
+    },
+
+    [pairKey("ssri","mdma")]:{
+      severity:SEVERITY.HIGH,
+      summary:"SSRIs + MDMA increases risk of serotonin toxicity and can lead to dangerous redosing if MDMA effects feel ‘blunted.’",
+      mechanism:"MDMA strongly increases serotonin release. Combining serotonergic substances increases serotonin-toxicity risk, especially with redosing, heat, dehydration, or multiple substances.",
+      whatToWatch:[
+        "Agitation/confusion, sweating, tremor",
+        "Rapid heart rate, overheating",
+        "Severe: rigid muscles, very high fever, seizures (emergency)"
+      ],
+      harmReduction:[
+        "Avoid mixing serotonergic substances",
+        "Do not redose to chase effects",
+        "Cool down and hydrate carefully",
+        "Seek emergency care for severe symptoms"
+      ]
+    },
+
+    [pairKey("ssri","opioids")]:{
+      severity:SEVERITY.MOD,
+      summary:"SSRIs + opioids can increase dizziness/sedation and impairment; risk rises if other depressants (alcohol/benzos) are also involved.",
+      mechanism:"Opioids depress the central nervous system. SSRIs can add dizziness/fatigue for some people, especially early in treatment. Combined impairment increases accidents and overdose-risk situations (especially with other depressants).",
+      whatToWatch:[
+        "Excessive drowsiness or confusion",
+        "Poor coordination/falls",
+        "Slow or shallow breathing (urgent, especially if other depressants are used)",
+        "Unresponsiveness (emergency)"
+      ],
+      harmReduction:[
+        "Avoid adding alcohol or benzodiazepines (major risk increase)",
+        "Do not drive if sedated",
+        "Use naloxone if opioids are involved and overdose suspected",
+        "Seek urgent help for breathing problems or inability to wake"
+      ]
+    },
+
+    [pairKey("ssri","nsaids")]:{
+      severity:SEVERITY.MOD,
+      summary:"SSRIs + NSAIDs (ibuprofen/naproxen) can increase bleeding risk compared to either alone.",
+      mechanism:"SSRIs can affect platelet function; NSAIDs also affect clotting and irritate the stomach lining. Together, they can raise the risk of gastrointestinal bleeding.",
+      whatToWatch:[
+        "Easy bruising or unusual bleeding",
+        "Stomach pain/heartburn",
+        "Black/tarry stools or vomiting blood (emergency)",
+        "Lightheadedness or fainting"
+      ],
+      harmReduction:[
+        "Use the lowest effective NSAID dose for the shortest time",
+        "Avoid alcohol with NSAIDs (bleeding risk increases)",
+        "Seek emergency care for black stools or vomiting blood",
+        "Ask a pharmacist/clinician about safer pain options if needed"
+      ]
+    },
+
+    [pairKey("ssri","nicotine")]:{
+      severity:SEVERITY.LOW,
+      summary:"SSRIs + nicotine usually isn’t a direct interaction, but nicotine can worsen anxiety, sleep, and agitation for some people—especially early in SSRI treatment.",
+      mechanism:"Nicotine is a stimulant that can increase heart rate and cue craving cycles. If SSRIs feel activating early on, nicotine may amplify restlessness or insomnia.",
+      whatToWatch:[
+        "Increased anxiety/jitters",
+        "Sleep disruption",
+        "Palpitations (especially with heavy vaping)",
+        "Irritability"
+      ],
+      harmReduction:[
+        "Avoid chain-vaping; set limits",
+        "Reduce nicotine if anxiety/insomnia worsens",
+        "Avoid adding other stimulants (high caffeine)",
+        "Seek help for chest pain or fainting"
+      ]
+    },
+
+    [pairKey("ssri","acetaminophen")]:{
+      severity:SEVERITY.LOW,
+      summary:"SSRIs + acetaminophen (Tylenol) is not usually a direct interaction. Biggest risk is accidentally exceeding Tylenol limits (especially with cold/flu products).",
+      mechanism:"Acetaminophen affects the liver; SSRIs typically do not directly increase Tylenol toxicity. Risk rises mainly with high doses, multiple acetaminophen-containing products, or alcohol use.",
+      whatToWatch:[
+        "Taking multiple products that contain acetaminophen",
+        "Nausea/vomiting or upper abdominal pain",
+        "Dark urine or jaundice (urgent)",
+        "If alcohol is also used: higher liver-toxicity risk"
+      ],
+      harmReduction:[
+        "Do not exceed acetaminophen label dosing",
+        "Avoid alcohol when using acetaminophen",
+        "Check cold/flu labels for acetaminophen/APAP",
+        "Seek help for severe symptoms or suspected overdose"
+      ]
+    },
+	      /* =========================
        ADDITIONS: CAFFEINE / NICOTINE / Rx STIMULANTS + THC & MORE
        ========================= */
 
@@ -1717,4 +1827,5 @@
 </script>
 </body>
 </html>
+
 
