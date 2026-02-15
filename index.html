@@ -271,6 +271,225 @@
         "Prioritize sleep; sleep loss increases next-day risk"
       ]
     },
+	      /* =========================
+       ADDITIONS: CAFFEINE / NICOTINE / Rx STIMULANTS + THC & MORE
+       ========================= */
+
+    // Caffeine + THC / Hemp THC
+    [pairKey("caffeine","thc")]:{
+      severity:SEVERITY.MOD,
+      summary:"Caffeine + THC can increase jitteriness, anxiety/panic, and palpitations for some people.",
+      mechanism:"Caffeine is a stimulant and can intensify heart rate and nervousness. THC can amplify anxiety or perceptual changes, making the combo feel ‘too intense,’ especially at higher doses.",
+      whatToWatch:[
+        "Jitters, shakiness",
+        "Anxiety/panic, paranoia (especially high THC)",
+        "Racing heart/palpitations",
+        "Insomnia"
+      ],
+      harmReduction:[
+        "Reduce caffeine dose (skip energy drinks)",
+        "Start low with THC; avoid high-potency products",
+        "Hydrate and avoid additional stimulants",
+        "Seek help for chest pain, fainting, or severe panic"
+      ]
+    },
+
+    [pairKey("caffeine","hemp_thc")]:{
+      severity:SEVERITY.MOD,
+      summary:"Caffeine + hemp-derived THC (Δ8/Δ10/THC-O etc.) can increase anxiety/jitters and make effects feel unpredictable.",
+      mechanism:"Caffeine adds stimulation while hemp-derived THC is psychoactive. Variable product potency can make the combined effect harder to predict.",
+      whatToWatch:[
+        "Anxiety/panic",
+        "Palpitations",
+        "Dizziness/nausea",
+        "Sleep disruption"
+      ],
+      harmReduction:[
+        "Avoid energy drink binges",
+        "Start low; products vary widely",
+        "Avoid stacking other stimulants (nicotine, cocaine, etc.)",
+        "Seek help for chest pain, fainting, or severe distress"
+      ]
+    },
+
+    // Nicotine + THC / Hemp THC
+    [pairKey("nicotine","thc")]:{
+      severity:SEVERITY.MOD,
+      summary:"Nicotine + THC commonly increases dizziness, nausea, anxiety, and palpitations—especially in newer users or with high-dose vaping.",
+      mechanism:"Nicotine is stimulating and can raise heart rate; THC can alter perception and anxiety levels. Together they may intensify ‘head rush’ effects and nausea.",
+      whatToWatch:[
+        "Dizziness or nausea",
+        "Anxiety/panic",
+        "Racing heart",
+        "Sleep disruption"
+      ],
+      harmReduction:[
+        "Avoid chain-vaping/smoking",
+        "Use smaller amounts; take breaks",
+        "Sit down if dizzy; hydrate",
+        "Seek help for chest pain or fainting"
+      ]
+    },
+
+    [pairKey("nicotine","hemp_thc")]:{
+      severity:SEVERITY.MOD,
+      summary:"Nicotine + hemp-derived THC can increase dizziness, nausea, anxiety, and palpitations; effects may be less predictable due to variable potency.",
+      mechanism:"Nicotine adds stimulation and craving cues; psychoactive hemp-derived THC adds impairment and anxiety risk for some people.",
+      whatToWatch:[
+        "Nausea/dizziness (‘head rush’)",
+        "Anxiety/panic",
+        "Palpitations",
+        "Confusion (high doses)"
+      ],
+      harmReduction:[
+        "Avoid rapid/continuous vaping",
+        "Start low; product strength varies widely",
+        "Avoid driving",
+        "Seek help for chest pain, fainting, or severe distress"
+      ]
+    },
+
+    // Rx Stimulants + THC / Hemp THC
+    [pairKey("stimulants_rx","thc")]:{
+      severity:SEVERITY.MOD,
+      summary:"Prescription stimulants + THC can increase anxiety, palpitations, and sleep disruption; some people feel ‘overstimulated.’",
+      mechanism:"Stimulants raise heart rate/alertness; THC can increase anxiety or perceptual changes. Sleep loss can amplify both effects and worsen mood stability.",
+      whatToWatch:[
+        "Racing heart/palpitations",
+        "Anxiety/panic",
+        "Insomnia",
+        "Irritability or mood swings"
+      ],
+      harmReduction:[
+        "Avoid high caffeine and nicotine when combining",
+        "Prefer lower THC doses; avoid high-potency concentrates",
+        "Prioritize sleep",
+        "Seek help for chest pain, fainting, or severe panic"
+      ]
+    },
+
+    [pairKey("stimulants_rx","hemp_thc")]:{
+      severity:SEVERITY.MOD,
+      summary:"Prescription stimulants + hemp-derived THC can increase anxiety, palpitations, and impairment; variable potency increases unpredictability.",
+      mechanism:"Stimulants increase sympathetic activation; psychoactive hemp-derived THC can intensify anxiety and perceptual changes. Product variability can make dosing less predictable.",
+      whatToWatch:[
+        "Palpitations/racing heart",
+        "Anxiety/panic",
+        "Dizziness/nausea",
+        "Sleep disruption"
+      ],
+      harmReduction:[
+        "Avoid energy drinks and chain-vaping",
+        "Start low; avoid mixing multiple substances",
+        "Do not drive if impaired",
+        "Seek help for chest pain, fainting, or severe distress"
+      ]
+    },
+
+    // Rx Stimulants + MDMA / Ketamine / Tramadol
+    [pairKey("stimulants_rx","mdma")]:{
+      severity:SEVERITY.HIGH,
+      summary:"Prescription stimulants + MDMA dangerously stacks stimulants and increases overheating and cardiovascular risk.",
+      mechanism:"Both raise heart rate, blood pressure, and body temperature. Combined use increases dehydration/heat injury and panic/agitation risk, especially with exertion and redosing.",
+      whatToWatch:[
+        "Overheating, confusion",
+        "Chest pain/palpitations",
+        "Severe agitation/panic",
+        "Severe: collapse, seizure, very high fever (emergency)"
+      ],
+      harmReduction:[
+        "Avoid mixing stimulants",
+        "Cool down, rest, hydrate carefully",
+        "Do not redose to chase effects",
+        "Seek emergency care for collapse, seizure, very high temperature, or chest pain"
+      ]
+    },
+
+    [pairKey("stimulants_rx","ketamine")]:{
+      severity:SEVERITY.MOD,
+      summary:"Prescription stimulants + ketamine can cause unpredictable impairment: stimulation plus dissociation increases accidents and confusion.",
+      mechanism:"Stimulants can increase activity and risk-taking while ketamine impairs coordination and awareness. Effects can feel inconsistent across people and doses.",
+      whatToWatch:[
+        "Severe confusion/dissociation",
+        "Falls/accidents",
+        "Anxiety/panic",
+        "Palpitations"
+      ],
+      harmReduction:[
+        "Avoid mixing if possible",
+        "Stay in a safe environment; do not drive",
+        "Seek help for chest pain, collapse, or unresponsiveness"
+      ]
+    },
+
+    [pairKey("stimulants_rx","tramadol")]:{
+      severity:SEVERITY.HIGH,
+      summary:"Prescription stimulants + tramadol increases seizure risk and can worsen anxiety, agitation, and cardiovascular strain.",
+      mechanism:"Tramadol lowers the seizure threshold and affects norepinephrine/serotonin; stimulants increase sympathetic activation. Together this can raise seizure and overstimulation risk.",
+      whatToWatch:[
+        "Seizure activity (emergency)",
+        "Severe agitation/anxiety",
+        "Racing heart/palpitations",
+        "Fainting"
+      ],
+      harmReduction:[
+        "Avoid mixing",
+        "Avoid additional stimulants (caffeine, cocaine, meth)",
+        "Seek emergency help for seizures, chest pain, fainting, or severe confusion"
+      ]
+    },
+
+    // Rx Stimulants + NSAIDs / Nicotine / Acetaminophen
+    [pairKey("stimulants_rx","nsaids")]:{
+      severity:SEVERITY.LOW,
+      summary:"Prescription stimulants + NSAIDs is not usually a direct interaction, but dehydration and blood pressure strain can increase overall risk for some people.",
+      mechanism:"Stimulants can reduce appetite and contribute to dehydration/insomnia. NSAIDs can stress the stomach/kidneys, especially if dehydrated or drinking alcohol.",
+      whatToWatch:[
+        "Stomach irritation/heartburn",
+        "Dehydration or dizziness",
+        "Headache that worsens despite dosing",
+        "If chest pain occurs, treat as urgent"
+      ],
+      harmReduction:[
+        "Hydrate and avoid excess NSAID dosing",
+        "Avoid alcohol with NSAIDs (bleeding risk)",
+        "Seek help for black stools/vomiting blood, or chest pain"
+      ]
+    },
+
+    [pairKey("stimulants_rx","nicotine")]:{
+      severity:SEVERITY.MOD,
+      summary:"Prescription stimulants + nicotine can increase heart rate, blood pressure, and anxiety; chain-vaping can make side effects worse.",
+      mechanism:"Both stimulate the nervous system. Nicotine can amplify restlessness and cue repeated use patterns.",
+      whatToWatch:[
+        "Jitteriness/irritability",
+        "Palpitations",
+        "Increased anxiety",
+        "Sleep disruption"
+      ],
+      harmReduction:[
+        "Reduce nicotine while adjusting stimulant dose",
+        "Avoid chain-vaping; take breaks",
+        "Seek help for chest pain, fainting, or severe palpitations"
+      ]
+    },
+
+    [pairKey("stimulants_rx","acetaminophen")]:{
+      severity:SEVERITY.LOW,
+      summary:"Prescription stimulants + acetaminophen (Tylenol) is not usually a direct interaction. Biggest risk is accidentally exceeding Tylenol limits (especially with cold/flu products).",
+      mechanism:"Acetaminophen affects the liver; stimulants affect cardiovascular stimulation. Risk increases mainly with dehydration, poor nutrition, or alcohol use plus Tylenol.",
+      whatToWatch:[
+        "Taking multiple products that contain acetaminophen",
+        "Nausea/vomiting or upper abdominal pain",
+        "If alcohol is also used: higher liver-toxicity risk"
+      ],
+      harmReduction:[
+        "Do not exceed acetaminophen label dosing",
+        "Avoid alcohol when using acetaminophen",
+        "Hydrate and rest",
+        "Seek help for severe symptoms or suspected overdose"
+      ]
+    },
     /* =========================
        METHAMPHETAMINE (CRYSTAL METH) ADDITIONS
        ========================= */
@@ -1498,3 +1717,4 @@
 </script>
 </body>
 </html>
+
