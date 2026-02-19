@@ -1384,6 +1384,57 @@
         "Seek emergency care for severe symptoms"
       ]
     },
+	[pairKey("mdma","nsaids")]:{
+  severity:SEVERITY.MOD,
+  summary:"MDMA + NSAIDs (ibuprofen/naproxen) isn’t a classic direct interaction, but MDMA-related dehydration/overheating can increase overall risk—especially if NSAIDs are taken repeatedly.",
+  mechanism:"MDMA can raise body temperature, increase sweating, and disrupt hydration. NSAIDs can stress the stomach and kidneys—risks increase when someone is dehydrated, overheated, or mixing alcohol.",
+  whatToWatch:[
+    "Overheating, dizziness, headache that worsens",
+    "Dark urine or low urination (dehydration)",
+    "Stomach pain/heartburn",
+    "Severe: confusion, collapse, very high fever (emergency)"
+  ],
+  harmReduction:[
+    "Avoid mixing substances; cool down and rest",
+    "Hydrate carefully (small sips; don’t overdo water)",
+    "Avoid alcohol with NSAIDs (bleeding risk increases)",
+    "Seek urgent care for confusion, collapse, chest pain, or very high temperature"
+  ]
+},
+  [pairKey("mdma","acetaminophen")]:{
+  severity:SEVERITY.MOD,
+  summary:"MDMA + acetaminophen (Tylenol) isn’t usually a direct interaction, but MDMA-related overheating/dehydration plus dosing mistakes can increase harm—especially if alcohol is also involved.",
+  mechanism:"Acetaminophen is processed by the liver. MDMA can cause dehydration, overheating, and poor judgment, increasing the chance of taking too much (or combining with other acetaminophen-containing products). Alcohol increases liver-toxicity risk.",
+  whatToWatch:[
+    "Overheating, severe headache, confusion",
+    "Nausea/vomiting",
+    "Taking multiple products that contain acetaminophen/APAP",
+    "Severe: collapse, seizure, very high fever (emergency)"
+  ],
+  harmReduction:[
+    "Do not exceed acetaminophen label dosing; check cold/flu meds for APAP",
+    "Avoid alcohol when using acetaminophen",
+    "Cool down, rest, and hydrate carefully",
+    "Seek emergency care for collapse, seizure, very high temperature, or severe confusion"
+  ]
+},
+[pairKey("mdma","nicotine")]:{
+  severity:SEVERITY.MOD,
+  summary:"MDMA + nicotine stacks stimulants and can increase heart rate, blood pressure, anxiety, and dehydration—especially with chain-vaping or heavy smoking.",
+  mechanism:"MDMA is stimulating and can raise body temperature. Nicotine adds more stimulation and can cue repeated use patterns, worsening palpitations and anxiety.",
+  whatToWatch:[
+    "Racing heart/palpitations",
+    "Anxiety/panic or agitation",
+    "Dizziness or nausea",
+    "Overheating/dehydration (hot skin, confusion)"
+  ],
+  harmReduction:[
+    "Avoid chain-vaping/smoking; take breaks",
+    "Hydrate and cool down; avoid energy drinks",
+    "Do not drive",
+    "Seek urgent help for chest pain, fainting, severe shortness of breath, or confusion"
+  ]
+},
     [pairKey("tramadol","ssri")]:{
       severity:SEVERITY.HIGH,
       summary:"Tramadol + SSRIs increases the risk of serotonin toxicity and seizures.",
@@ -1876,6 +1927,7 @@
 </script>
 </body>
 </html>
+
 
 
 
