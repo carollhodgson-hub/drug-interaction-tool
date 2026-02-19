@@ -503,7 +503,7 @@
       ]
     },
 
-    [pairKey("ssri","acetaminophen")]:{
+   [pairKey("ssri","acetaminophen")]:{ 
       severity:SEVERITY.LOW,
       summary:"SSRIs + acetaminophen (Tylenol) is not usually a direct interaction. Biggest risk is accidentally exceeding Tylenol limits (especially with cold/flu products).",
       mechanism:"Acetaminophen affects the liver; SSRIs typically do not directly increase Tylenol toxicity. Risk rises mainly with high doses, multiple acetaminophen-containing products, or alcohol use.",
@@ -520,9 +520,7 @@
         "Seek help for severe symptoms or suspected overdose"
       ]
     },
-
-},
-    [pairKey("meth","thc")]:{
+   [pairKey("meth","thc")]:{
       severity:SEVERITY.HIGH,
       summary:"Meth + THC can increase anxiety/paranoia and make impairment feel unpredictable.",
       mechanism:"Meth can intensify agitation and sleep deprivation; THC can amplify anxiety/paranoia for some, increasing distress and risky decisions.",
@@ -538,42 +536,7 @@
         "Seek urgent help for chest pain or severe distress"
       ]
     },
-
-    [pairKey("meth","thc")]:{
-      severity:SEVERITY.HIGH,
-      summary:"Meth + THC can increase anxiety/paranoia and make impairment feel unpredictable.",
-      mechanism:"Meth can intensify agitation and sleep deprivation; THC can amplify anxiety/paranoia for some, increasing distress and risky decisions.",
-      whatToWatch:[
-        "Severe anxiety/panic, paranoia",
-        "Racing heart",
-        "Confusion",
-        "Chest pain (urgent)"
-      ],
-      harmReduction:[
-        "Avoid mixing if prone to anxiety/paranoia",
-        "Hydrate and cool down; avoid more stimulants",
-        "Seek urgent help for chest pain or severe distress"
-      ]
-    },
-
-    [pairKey("meth","thc")]:{
-      severity:SEVERITY.HIGH,
-      summary:"Meth + THC can increase anxiety/paranoia and make impairment feel unpredictable.",
-      mechanism:"Meth can intensify agitation and sleep deprivation; THC can amplify anxiety/paranoia for some, increasing distress and risky decisions.",
-      whatToWatch:[
-        "Severe anxiety/panic, paranoia",
-        "Racing heart",
-        "Confusion",
-        "Chest pain (urgent)"
-      ],
-      harmReduction:[
-        "Avoid mixing if prone to anxiety/paranoia",
-        "Hydrate and cool down; avoid more stimulants",
-        "Seek urgent help for chest pain or severe distress"
-      ]
-    },
-
-    [pairKey("meth","hemp_thc")]:{
+   [pairKey("meth","hemp_thc")]:{
       severity:SEVERITY.HIGH,
       summary:"Meth + hemp-derived THC can intensify anxiety/paranoia and increase cardiac strain; product strength varies so effects can be less predictable.",
       mechanism:"High stimulation combined with psychoactive THC increases distress and risk-taking; variable potency increases unpredictability.",
@@ -589,7 +552,6 @@
         "Avoid further stimulant use"
       ]
     },
-
     [pairKey("meth","nicotine")]:{
       severity:SEVERITY.MOD,
       summary:"Meth + nicotine stacks stimulants and can increase palpitations, anxiety, and craving-driven escalation.",
@@ -628,7 +590,6 @@
         "Seek help for chest pain, fainting, or severe panic"
       ]
     },
-
     [pairKey("caffeine","hemp_thc")]:{
       severity:SEVERITY.MOD,
       summary:"Caffeine + hemp-derived THC (Δ8/Δ10/THC-O etc.) can increase anxiety/jitters and make effects feel unpredictable.",
@@ -646,7 +607,6 @@
         "Seek help for chest pain, fainting, or severe distress"
       ]
     },
-
     // Nicotine + THC / Hemp THC
     [pairKey("nicotine","thc")]:{
       severity:SEVERITY.MOD,
@@ -665,7 +625,6 @@
         "Seek help for chest pain or fainting"
       ]
     },
-
     [pairKey("nicotine","hemp_thc")]:{
       severity:SEVERITY.MOD,
       summary:"Nicotine + hemp-derived THC can increase dizziness, nausea, anxiety, and palpitations; effects may be less predictable due to variable potency.",
@@ -683,7 +642,6 @@
         "Seek help for chest pain, fainting, or severe distress"
       ]
     },
-
     // Rx Stimulants + THC / Hemp THC
     [pairKey("stimulants_rx","thc")]:{
       severity:SEVERITY.MOD,
@@ -702,7 +660,6 @@
         "Seek help for chest pain, fainting, or severe panic"
       ]
     },
-
     [pairKey("stimulants_rx","hemp_thc")]:{
       severity:SEVERITY.MOD,
       summary:"Prescription stimulants + hemp-derived THC can increase anxiety, palpitations, and impairment; variable potency increases unpredictability.",
@@ -720,7 +677,6 @@
         "Seek help for chest pain, fainting, or severe distress"
       ]
     },
-
     // Rx Stimulants + MDMA / Ketamine / Tramadol
     [pairKey("stimulants_rx","mdma")]:{
       severity:SEVERITY.HIGH,
@@ -739,7 +695,6 @@
         "Seek emergency care for collapse, seizure, very high temperature, or chest pain"
       ]
     },
-
     [pairKey("stimulants_rx","ketamine")]:{
       severity:SEVERITY.MOD,
       summary:"Prescription stimulants + ketamine can cause unpredictable impairment: stimulation plus dissociation increases accidents and confusion.",
@@ -756,7 +711,6 @@
         "Seek help for chest pain, collapse, or unresponsiveness"
       ]
     },
-
     [pairKey("stimulants_rx","tramadol")]:{
       severity:SEVERITY.HIGH,
       summary:"Prescription stimulants + tramadol increases seizure risk and can worsen anxiety, agitation, and cardiovascular strain.",
@@ -812,7 +766,6 @@
         "Seek help for chest pain, fainting, or severe anxiety"
       ]
     },
-
     [pairKey("stimulants_rx","nicotine")]:{
       severity:SEVERITY.MOD,
       summary:"Prescription stimulants + nicotine can increase heart rate, blood pressure, and anxiety; chain-vaping can make side effects worse.",
@@ -829,7 +782,6 @@
         "Seek help for chest pain, fainting, or severe palpitations"
       ]
     },
-
     [pairKey("stimulants_rx","acetaminophen")]:{
       severity:SEVERITY.LOW,
       summary:"Prescription stimulants + acetaminophen (Tylenol) is not usually a direct interaction. Biggest risk is accidentally exceeding Tylenol limits (especially with cold/flu products).",
@@ -846,7 +798,6 @@
         "Seek help for severe symptoms or suspected overdose"
       ]
     },
-
 
     /* =========================
        FINAL COMMON INTERACTIONS
@@ -886,7 +837,6 @@
         "Seek medical help for chest pain, fainting, or severe symptoms"
       ]
     },
-
     [pairKey("meth","cocaine")]:{
       severity:SEVERITY.HIGH,
       summary:"Meth + cocaine dangerously stacks powerful stimulants and greatly increases risk of heart attack, stroke-like events, overheating, and death.",
@@ -903,7 +853,6 @@
         "Cool down and stop stimulant use"
       ]
     },
-
     [pairKey("meth","acetaminophen")]:{
       severity:SEVERITY.MOD,
       summary:"Meth + acetaminophen (Tylenol) is not a direct interaction, but multi-substance use can increase overall medical risk—especially if alcohol is also involved.",
@@ -921,8 +870,6 @@
         "Seek urgent help for chest pain, confusion, or severe symptoms"
       ]
     },
-
-
     [pairKey("meth","caffeine")]:{
       severity:SEVERITY.HIGH,
       summary:"Meth + caffeine/energy drinks dangerously stacks stimulants and increases overheating and cardiovascular risk.",
@@ -960,7 +907,6 @@
         "Hydrate and cool down; avoid additional stimulants"
       ]
     },
-
     [pairKey("cocaine","mdma")]:{
       severity:SEVERITY.HIGH,
       summary:"Cocaine + MDMA increases overheating and cardiac risk and can worsen agitation and impaired judgment.",
@@ -977,7 +923,6 @@
         "Seek emergency care for collapse, seizure, or very high temperature"
       ]
     },
-
     [pairKey("cocaine","ketamine")]:{
       severity:SEVERITY.HIGH,
       summary:"Cocaine + ketamine can be dangerous because impairment is unpredictable: stimulant drive plus dissociation increases accidents and medical emergencies.",
@@ -994,7 +939,6 @@
         "Seek urgent help for chest pain, collapse, or unresponsiveness"
       ]
     },
-
     [pairKey("cocaine","tramadol")]:{
       severity:SEVERITY.HIGH,
       summary:"Cocaine + tramadol increases seizure risk and can raise cardiovascular and agitation risk.",
@@ -1011,7 +955,6 @@
         "Avoid additional stimulants or depressants"
       ]
     },
-
     [pairKey("cocaine","thc")]:{
       severity:SEVERITY.HIGH,
       summary:"Cocaine + THC can increase anxiety/panic and cardiovascular strain; impairment can feel unpredictable.",
@@ -1028,7 +971,6 @@
         "Avoid more stimulants and stay hydrated"
       ]
     },
-
     [pairKey("cocaine","hemp_thc")]:{
       severity:SEVERITY.HIGH,
       summary:"Cocaine + hemp-derived THC (Δ8/Δ10/THC-O etc.) can increase panic/anxiety and heart strain; product strength varies so effects may be less predictable.",
@@ -1045,7 +987,6 @@
         "Avoid additional stimulants"
       ]
     },
-
     [pairKey("cocaine","acetaminophen")]:{
       severity:SEVERITY.MOD,
       summary:"Cocaine + acetaminophen (Tylenol) is not a classic ‘interaction,’ but it can increase overall medical risk—especially if alcohol is also involved.",
@@ -1061,7 +1002,6 @@
         "Seek urgent help for chest pain or severe symptoms"
       ]
     },
-
     [pairKey("cocaine","nsaids")]:{
       severity:SEVERITY.MOD,
       summary:"Cocaine + NSAIDs isn’t a classic ‘interaction,’ but mixing substances can increase overall risk (blood pressure strain + dehydration + GI irritation).",
@@ -1077,7 +1017,6 @@
         "Seek urgent help for chest pain or black stools/vomiting blood"
       ]
     },
-
     [pairKey("cocaine","nicotine")]:{
       severity:SEVERITY.MOD,
       summary:"Cocaine + nicotine increases stimulant load and can intensify cravings and cardiovascular strain.",
@@ -1094,7 +1033,6 @@
         "Seek urgent help for chest pain, fainting, severe shortness of breath"
       ]
     },
-
 
     /* =========================
        OPIOID INTERACTIONS
@@ -1117,7 +1055,6 @@
         "Place person in recovery position and stay with them"
       ]
     },
-
     [pairKey("opioids","thc")]:{
       severity:SEVERITY.HIGH,
       summary:"Opioids + THC increases sedation and may mask early overdose warning signs.",
@@ -1155,7 +1092,6 @@
         "Call emergency services if breathing slows or stops"
       ]
     },
-
     [pairKey("opioids","mdma")]:{
       severity:SEVERITY.HIGH,
       summary:"Opioids + MDMA is a dangerous combination that can mask overdose symptoms and stress the heart.",
@@ -1173,7 +1109,6 @@
         "Seek emergency help for breathing problems or collapse"
       ]
     },
-
     [pairKey("opioids","stimulants_rx")]:{
       severity:SEVERITY.HIGH,
       summary:"Opioids + prescription stimulants increase cardiac strain and overdose risk.",
@@ -1191,7 +1126,6 @@
         "Seek medical help for chest pain or collapse"
       ]
     },
-
     [pairKey("alcohol","benzos")]:{
       severity:SEVERITY.HIGH,
       summary:"Alcohol + benzodiazepines is one of the most dangerous combinations due to severe breathing suppression.",
@@ -1230,7 +1164,6 @@
         "Prioritize sleep—sleep loss amplifies risk"
       ]
     },
-
     [pairKey("caffeine","mdma")]:{
       severity:SEVERITY.HIGH,
       summary:"Caffeine/energy drinks + MDMA increases overheating, dehydration, and heart strain risk.",
@@ -1247,7 +1180,6 @@
         "Seek emergency care for collapse, seizure, or very high temperature"
       ]
     },
-
     [pairKey("caffeine","cocaine")]:{
       severity:SEVERITY.HIGH,
       summary:"Caffeine/energy drinks + cocaine increases stimulant load and cardiovascular risk.",
@@ -1264,7 +1196,6 @@
         "Hydrate and cool down; avoid additional stimulants"
       ]
     },
-
     [pairKey("nicotine","stimulants_rx")]:{
       severity:SEVERITY.MOD,
       summary:"Nicotine + prescription stimulants can increase heart rate, blood pressure, and anxiety for some people.",
@@ -1281,7 +1212,6 @@
         "Seek help for chest pain, fainting, or severe palpitations"
       ]
     },
-
     [pairKey("nicotine","caffeine")]:{
       severity:SEVERITY.MOD,
       summary:"Nicotine + caffeine commonly increases jitteriness, anxiety, and sleep disruption.",
@@ -1298,7 +1228,6 @@
         "Hydrate and sleep—sleep loss makes everything worse"
       ]
     },
-
     [pairKey("benzos","stimulants_rx")]:{
       severity:SEVERITY.HIGH,
       summary:"Benzodiazepines + prescription stimulants can mask impairment and encourage risky redosing.",
@@ -1315,7 +1244,6 @@
         "Seek help if unable to wake or severe confusion occurs"
       ]
     },
-
     [pairKey("ketamine","mdma")]:{
       severity:SEVERITY.HIGH,
       summary:"Ketamine + MDMA increases confusion, overheating risk, and loss of consciousness.",
@@ -1332,7 +1260,6 @@
         "Seek emergency help for collapse or very high body temperature"
       ]
     },
-
     [pairKey("ketamine","tramadol")]:{
       severity:SEVERITY.HIGH,
       summary:"Ketamine + tramadol increases sedation, confusion, and seizure risk.",
@@ -1349,7 +1276,6 @@
         "Avoid additional serotonergic or sedating substances"
       ]
     },
-
     [pairKey("ketamine","ssri")]:{
       severity:SEVERITY.MOD,
       summary:"Ketamine + SSRIs may increase dissociation or confusion for some people.",
@@ -1386,7 +1312,6 @@
         "Seek emergency care for collapse, seizures, or very high temperature"
       ]
     },
-
     [pairKey("hemp_thc","tramadol")]:{
       severity:SEVERITY.HIGH,
       summary:"Hemp-derived THC + tramadol increases dizziness, confusion, and seizure risk.",
@@ -1426,7 +1351,6 @@
         "Seek emergency care for collapse, severe confusion, seizure, or very high temperature"
       ]
     },
-
     [pairKey("thc","tramadol")]:{
       severity:SEVERITY.HIGH,
       summary:"THC + tramadol can increase dizziness, confusion, and accident risk; tramadol also carries seizure risk.",
@@ -1444,8 +1368,6 @@
         "Use tramadol only as prescribed and discuss risks with a clinician"
       ]
     },
-
-
     [pairKey("mdma","ssri")]:{
       severity:SEVERITY.HIGH,
       summary:"MDMA + SSRIs increases risk of serotonin toxicity and may lead to dangerous redosing.",
@@ -1462,7 +1384,6 @@
         "Seek emergency care for severe symptoms"
       ]
     },
-
     [pairKey("tramadol","ssri")]:{
       severity:SEVERITY.HIGH,
       summary:"Tramadol + SSRIs increases the risk of serotonin toxicity and seizures.",
@@ -1479,7 +1400,6 @@
         "Consult a clinician about safer alternatives"
       ]
     },
-
     [pairKey("hemp_thc","ssri")]:{
       severity:SEVERITY.MOD,
       summary:"Hemp-derived THC + SSRIs can increase anxiety, panic, or dissociation in some users.",
@@ -1515,7 +1435,6 @@
         "If jaundice, severe abdominal pain, or confusion occurs: emergency care"
       ]
     },
-
     [pairKey("alcohol","nsaids")]:{
       severity:SEVERITY.HIGH,
       summary:"Alcohol + NSAIDs (ibuprofen/naproxen) increases risk of stomach bleeding and ulcers.",
@@ -1533,7 +1452,6 @@
         "Consider non-NSAID options if drinking is likely (ask a clinician/pharmacist)"
       ]
     },
-
     [pairKey("opioids","acetaminophen")]:{
       severity:SEVERITY.MOD,
       summary:"Opioids + acetaminophen is common in combo pain meds (e.g., hydrocodone/APAP). Risk rises if people unknowingly exceed acetaminophen limits.",
@@ -1550,7 +1468,6 @@
         "Seek guidance if you suspect you exceeded safe limits"
       ]
     },
-
     [pairKey("tramadol","nsaids")]:{
       severity:SEVERITY.MOD,
       summary:"Tramadol + NSAIDs can increase dizziness and accident risk (and may irritate the stomach if NSAIDs are used heavily).",
@@ -1605,7 +1522,6 @@
         "Use only as prescribed and discuss safer options with a clinician"
       ]
     },
-
     [pairKey("benzos","ssri")]:{
       severity:SEVERITY.MOD,
       summary:"Benzodiazepines + SSRIs can increase sedation, dizziness, and impaired coordination. Effects vary by dose and individual.",
@@ -1623,7 +1539,6 @@
         "Seek guidance if excessive sedation or confusion occurs"
       ]
     },
-
     [pairKey("hemp_thc","benzos")]:{
       severity:SEVERITY.HIGH,
       summary:"Hemp-derived THC (Δ8/Δ10/THC-O etc.) + benzodiazepines increases sedation and accident risk.",
@@ -1692,7 +1607,7 @@
     "Seek help for severe abdominal pain or suspected overdose"
   ]
 },
-[pairKey("benzos","nsaids")]:{
+[pairKey("benzos","nsaids")]:{ 
   severity:SEVERITY.LOW,
   summary:"Benzodiazepines + NSAIDs is not usually a direct interaction, but sedation can increase fall and injury risk.",
   mechanism:"NSAIDs can irritate the stomach and kidneys, while benzodiazepines impair coordination and alertness. Together, the main risk is accidental injury or unrecognized side effects.",
@@ -1708,8 +1623,6 @@
     "Avoid driving if sedated",
     "Seek help for black stools, severe dizziness, or falls"
   ]
-},
-
 },
     [pairKey("meth","thc")]:{
       severity:SEVERITY.HIGH,
@@ -1727,7 +1640,7 @@
         "Seek urgent help for chest pain or severe distress"
       ]
     },
-    [pairKey("opioids","ketamine")]:{
+   [pairKey("opioids","ketamine")]:{
       severity:SEVERITY.HIGH,
       summary:"Opioids + ketamine greatly increases sedation, confusion, and breathing suppression.",
       mechanism:"Both substances affect the central nervous system. Together they can cause profound dissociation, loss of consciousness, and respiratory depression.",
@@ -1744,7 +1657,6 @@
         "Place in recovery position to reduce choking risk"
       ]
     },
-
     [pairKey("stimulants_rx","alcohol")]:{
       severity:SEVERITY.HIGH,
       summary:"Rx stimulants + alcohol increases risky behavior and strain on the heart. Stimulants can mask alcohol’s sedative effects, leading to heavier drinking.",
@@ -1780,7 +1692,6 @@
       whatToWatch:["Extreme drowsiness/confusion","Slow/shallow breathing","Seizure or severe agitation"],
       harmReduction:["Avoid mixing","Emergency help if breathing trouble/unresponsive/seizure","Do not add other sedatives/opioids"]
     },
-
     // --- SSRI interactions (these are the ones you missed) ---
     [pairKey("ssri","alcohol")]:{
       severity:SEVERITY.MOD,
@@ -1803,7 +1714,6 @@
       whatToWatch:["More nausea, dizziness, sleepiness than usual","Headache/jitteriness","If serotonin-toxicity symptoms appear (agitation, sweating, tremor), seek help—especially if other serotonergic drugs are involved"],
       harmReduction:["Check your specific medication label or ask a pharmacist about grapefruit","If side effects increase after grapefruit, stop grapefruit and seek guidance","Be extra cautious if other serotonergic drugs are present (e.g., MDMA, tramadol)"]
     },
-
     // --- THC / Cannabis interactions ---
     [pairKey("thc","alcohol")]:{
       severity:SEVERITY.HIGH,
@@ -1833,7 +1743,6 @@
       whatToWatch:["Anxiety/panic","Derealization/dissociation","Mood instability"],
       harmReduction:["Start low; avoid high potency","Avoid if anxiety worsens","Seek guidance if symptoms persist"]
     },
-
     // --- Hemp-derived THC variants interactions ---
     [pairKey("hemp_thc","alcohol")]:{
       severity:SEVERITY.HIGH,
@@ -1857,7 +1766,6 @@
       harmReduction:["Start low; avoid mixing substances","Stop if symptoms worsen","Seek help if severe or persistent"]
     }
   };
-
   function renderUnknown(a,b){
     result.innerHTML = `
       <div class="row">
@@ -1968,6 +1876,7 @@
 </script>
 </body>
 </html>
+
 
 
 
