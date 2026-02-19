@@ -271,6 +271,93 @@
         "Prioritize sleep; sleep loss increases next-day risk"
       ]
     },
+	  [pairKey("benzodiazepines","nicotine")]:{
+  severity:SEVERITY.MOD,
+  summary:"Benzodiazepines + nicotine can increase dizziness, impaired coordination, and cardiovascular strain, while nicotine may mask sedation.",
+  mechanism:"Benzodiazepines depress the central nervous system, causing sedation and slowed reaction time. Nicotine is a stimulant that can partially mask sedation, increasing the risk of overuse, accidents, and heart strain.",
+  whatToWatch:[
+    "Dizziness or lightheadedness",
+    "Poor coordination or slowed reaction time",
+    "Palpitations or increased heart rate",
+    "Increased cigarette or vape use to counter sedation"
+  ],
+  harmReduction:[
+    "Avoid driving or risky activities",
+    "Avoid chain-smoking or heavy vaping",
+    "Use the lowest effective benzodiazepine dose",
+    "Seek help for chest pain, fainting, or severe confusion"
+  ]
+},
+[pairKey("benzodiazepines","caffeine")]:{
+  severity:SEVERITY.MOD,
+  summary:"Benzodiazepines + caffeine can create a push–pull effect, increasing anxiety, sleep disruption, and impaired judgment.",
+  mechanism:"Caffeine stimulates the nervous system while benzodiazepines suppress it. This opposing action can lead to increased dosing of one or both substances and reduced awareness of impairment.",
+  whatToWatch:[
+    "Anxiety or jitteriness",
+    "Sleep disruption or insomnia",
+    "Increased benzodiazepine use to ‘calm down’",
+    "Poor concentration or judgment"
+  ],
+  harmReduction:[
+    "Reduce caffeine intake, especially later in the day",
+    "Avoid energy drinks",
+    "Use benzodiazepines only as prescribed",
+    "Seek help for severe anxiety or confusion"
+  ]
+},
+[pairKey("benzodiazepines","acetaminophen")]:{
+  severity:SEVERITY.LOW,
+  summary:"Benzodiazepines + acetaminophen is not usually a direct interaction, but sedation can increase dosing mistakes.",
+  mechanism:"Acetaminophen affects the liver, while benzodiazepines cause sedation and impaired judgment. The primary risk is unintentionally exceeding safe acetaminophen doses, especially if alcohol is also used.",
+  whatToWatch:[
+    "Taking multiple acetaminophen-containing products",
+    "Excessive drowsiness",
+    "Nausea or upper abdominal pain",
+    "Confusion about dosing schedules"
+  ],
+  harmReduction:[
+    "Do not exceed acetaminophen label limits",
+    "Avoid alcohol when using acetaminophen",
+    "Double-check combination cold/flu products",
+    "Seek help for severe abdominal pain or suspected overdose"
+  ]
+},
+
+[pairKey("benzodiazepines","nsaids")]:{
+  severity:SEVERITY.LOW,
+  summary:"Benzodiazepines + NSAIDs is not usually a direct interaction, but sedation can increase fall and injury risk.",
+  mechanism:"NSAIDs can irritate the stomach and kidneys, while benzodiazepines impair coordination and alertness. Together, the main risk is accidental injury or unrecognized side effects.",
+  whatToWatch:[
+    "Dizziness or balance problems",
+    "Stomach pain or heartburn",
+    "Increased risk of falls",
+    "Delayed recognition of NSAID side effects"
+  ],
+  harmReduction:[
+    "Avoid alcohol (bleeding risk increases)",
+    "Take NSAIDs with food",
+    "Avoid driving if sedated",
+    "Seek help for black stools, severe dizziness, or falls"
+  ]
+},
+
+    [pairKey("meth","thc")]:{
+      severity:SEVERITY.HIGH,
+      summary:"Meth + THC can increase anxiety/paranoia and make impairment feel unpredictable.",
+      mechanism:"Meth can intensify agitation and sleep deprivation; THC can amplify anxiety/paranoia for some, increasing distress and risky decisions.",
+      whatToWatch:[
+        "Severe anxiety/panic, paranoia",
+        "Racing heart",
+        "Confusion",
+        "Chest pain (urgent)"
+      ],
+      harmReduction:[
+        "Avoid mixing if prone to anxiety/paranoia",
+        "Hydrate and cool down; avoid more stimulants",
+        "Seek urgent help for chest pain or severe distress"
+      ]
+    },
+
 	      /* =========================
        SSRI + ADDITIONAL COMMON COMBOS
        ========================= */
@@ -1848,6 +1935,7 @@
 </script>
 </body>
 </html>
+
 
 
 
