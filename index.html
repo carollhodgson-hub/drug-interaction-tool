@@ -271,24 +271,146 @@
         "Prioritize sleep; sleep loss increases next-day risk"
       ]
     },
-    [pairKey("meth","thc")]:{
+    /* =========================
+       METHAMPHETAMINE (CRYSTAL METH) ADDITIONS
+       ========================= */
+
+    [pairKey("meth","alcohol")]:{
       severity:SEVERITY.HIGH,
-      summary:"Meth + THC can increase anxiety/paranoia and make impairment feel unpredictable.",
-      mechanism:"Meth can intensify agitation and sleep deprivation; THC can amplify anxiety/paranoia for some, increasing distress and risky decisions.",
+      summary:"Meth + alcohol can increase risky behavior and medical danger because meth masks intoxication while alcohol still impairs judgment and coordination.",
+      mechanism:"Meth increases stimulation and reduces fatigue; alcohol still impairs decision-making. This can prolong drinking and increase accidents, aggression, and dehydration.",
       whatToWatch:[
-        "Severe anxiety/panic, paranoia",
-        "Racing heart",
-        "Confusion",
-        "Chest pain (urgent)"
+        "Severe agitation/impulsivity",
+        "Overheating/dehydration",
+        "Chest pain/palpitations",
+        "Blackouts or collapse"
       ],
       harmReduction:[
-        "Avoid mixing if prone to anxiety/paranoia",
+        "Avoid mixing",
         "Hydrate and cool down; avoid more stimulants",
-        "Seek urgent help for chest pain or severe distress"
+        "Seek urgent help for chest pain, collapse, severe confusion"
       ]
     },
 
-	      /* =========================
+    [pairKey("meth","benzos")]:{
+      severity:SEVERITY.HIGH,
+      summary:"Meth + benzodiazepines is risky because each can mask the other, encouraging higher use and causing unpredictable impairment.",
+      mechanism:"Benzos may reduce anxiety/jitters; meth can hide sedation. This can drive escalation and increase blackout, accidents, and medical emergencies.",
+      whatToWatch:[
+        "Memory gaps/blackouts",
+        "Severe confusion",
+        "Falls/injuries",
+        "Sudden heavy sedation as stimulant fades"
+      ],
+      harmReduction:[
+        "Avoid mixing sedatives and stimulants",
+        "Do not drive",
+        "Seek help if unable to wake, severe confusion, or breathing seems slow"
+      ]
+    },
+
+    [pairKey("meth","opioids")]:{
+      severity:SEVERITY.HIGH,
+      summary:"Meth + opioids increases overdose risk and cardiac strain; stimulant effects can mask opioid sedation until they wear off.",
+      mechanism:"Stimulant drive can lead to redosing; as meth wears off, opioid respiratory depression can become dominant and fatal.",
+      whatToWatch:[
+        "Chest pain/palpitations",
+        "Sudden extreme sleepiness",
+        "Slow/shallow breathing",
+        "Collapse/unresponsiveness"
+      ],
+      harmReduction:[
+        "Avoid mixing",
+        "Have naloxone if opioids are involved",
+        "Call emergency services for breathing problems, collapse, or inability to wake"
+      ]
+    },
+
+    [pairKey("meth","stimulants_rx")]:{
+      severity:SEVERITY.HIGH,
+      summary:"Meth + prescription stimulants dangerously stacks stimulants and raises risk of heart attack, stroke-like events, severe anxiety, and overheating.",
+      mechanism:"Both raise blood pressure and heart rate; stacking increases cardiovascular strain and panic/agitation risk.",
+      whatToWatch:[
+        "Chest pain, fainting, severe shortness of breath",
+        "Severe agitation/panic",
+        "Overheating",
+        "Stroke-like symptoms (emergency)"
+      ],
+      harmReduction:[
+        "Avoid stacking stimulants",
+        "Seek urgent care for chest pain, fainting, or neurologic symptoms",
+        "Cool down and avoid further stimulant use"
+      ]
+    },
+
+    [pairKey("meth","mdma")]:{
+      severity:SEVERITY.HIGH,
+      summary:"Meth + MDMA is a high-risk stimulant combination with increased overheating and cardiac danger.",
+      mechanism:"Both stimulate the nervous system and raise body temperature; together they increase dehydration/heat injury and heart strain.",
+      whatToWatch:[
+        "Overheating, confusion",
+        "Chest pain/palpitations",
+        "Severe headache/vomiting",
+        "Severe: collapse, seizure, very high fever"
+      ],
+      harmReduction:[
+        "Avoid mixing stimulants",
+        "Cool down, rest, hydrate carefully",
+        "Seek emergency care for collapse, seizure, or very high temperature"
+      ]
+    },
+
+    [pairKey("meth","ketamine")]:{
+      severity:SEVERITY.HIGH,
+      summary:"Meth + ketamine can cause unpredictable impairment: high stimulation plus dissociation increases injury and emergency risk.",
+      mechanism:"Meth raises activity and risk-taking; ketamine impairs coordination and awareness, increasing accidents and medical complications.",
+      whatToWatch:[
+        "Severe confusion/dissociation",
+        "Falls/injuries",
+        "Chest pain/palpitations",
+        "Vomiting while impaired"
+      ],
+      harmReduction:[
+        "Avoid mixing",
+        "Stay in a safe environment; do not drive",
+        "Seek urgent help for chest pain, collapse, or unresponsiveness"
+      ]
+    },
+
+    [pairKey("meth","tramadol")]:{
+      severity:SEVERITY.HIGH,
+      summary:"Meth + tramadol increases seizure risk and can intensify agitation and cardiac strain.",
+      mechanism:"Tramadol lowers seizure threshold; meth is highly stimulating. Together they raise neurological and cardiovascular risk.",
+      whatToWatch:[
+        "Seizures (emergency)",
+        "Severe agitation/confusion",
+        "Chest pain/palpitations",
+        "Fainting"
+      ],
+      harmReduction:[
+        "Avoid mixing",
+        "Seek emergency help for seizures, chest pain, fainting, or severe confusion",
+        "Avoid additional stimulants"
+      ]
+    },
+
+    [pairKey("meth","ssri")]:{
+      severity:SEVERITY.HIGH,
+      summary:"Meth + SSRIs can increase agitation, insomnia, anxiety, and overall medical risk; responses vary widely.",
+      mechanism:"Meth strongly stimulates; SSRIs affect serotonin signaling. Combined use can worsen agitation and sleep deprivation, which increases risk-taking and mental distress.",
+      whatToWatch:[
+        "Severe agitation/anxiety",
+        "Insomnia for long periods",
+        "Paranoia or confusion",
+        "Chest pain/palpitations"
+      ],
+      harmReduction:[
+        "Avoid mixing",
+        "Prioritize stopping stimulation and getting help if paranoia/confusion escalates",
+        "Seek urgent care for chest pain, severe agitation, or inability to sleep for extended periods"
+      ]
+    },
+    /* =========================
        SSRI + ADDITIONAL COMMON COMBOS
        ========================= */
 
@@ -324,27 +446,6 @@
         "Do not redose to chase effects",
         "Cool down and hydrate carefully",
         "Seek emergency care for severe symptoms"
-      ]
-    },
-    /* =========================
-       SSRI + CAFFEINE
-       ========================= */
-
-    [pairKey("ssri","caffeine")]:{
-      severity:SEVERITY.MOD,
-      summary:"SSRIs + caffeine can increase anxiety, jitteriness, palpitations, and sleep disruption for some people.",
-      mechanism:"Caffeine is a stimulant and can amplify activation side effects that sometimes occur with SSRIs, especially early in treatment or after dose changes. Sleep disruption can further worsen anxiety and mood regulation.",
-      whatToWatch:[
-        "Jitteriness or shakiness",
-        "Increased anxiety or panic symptoms",
-        "Racing heart or palpitations",
-        "Insomnia or poor-quality sleep"
-      ],
-      harmReduction:[
-        "Reduce caffeine intake (especially energy drinks)",
-        "Avoid caffeine later in the day",
-        "Monitor symptoms during SSRI dose changes",
-        "Seek help for chest pain, fainting, or severe anxiety"
       ]
     },
 
@@ -419,7 +520,299 @@
         "Seek help for severe symptoms or suspected overdose"
       ]
     },
-	      /* =========================
+[pairKey("benzodiazepines","nicotine")]:{
+  severity:SEVERITY.MOD,
+  summary:"Benzodiazepines + nicotine can increase dizziness, impaired coordination, and cardiovascular strain, while nicotine may mask sedation.",
+  mechanism:"Benzodiazepines depress the central nervous system, causing sedation and slowed reaction time. Nicotine is a stimulant that can partially mask sedation, increasing the risk of overuse, accidents, and heart strain.",
+  whatToWatch:[
+    "Dizziness or lightheadedness",
+    "Poor coordination or slowed reaction time",
+    "Palpitations or increased heart rate",
+    "Increased cigarette or vape use to counter sedation"
+  ],
+  harmReduction:[
+    "Avoid driving or risky activities",
+    "Avoid chain-smoking or heavy vaping",
+    "Use the lowest effective benzodiazepine dose",
+    "Seek help for chest pain, fainting, or severe confusion"
+  ]
+},
+[pairKey("benzodiazepines","caffeine")]:{
+  severity:SEVERITY.MOD,
+  summary:"Benzodiazepines + caffeine can create a push–pull effect, increasing anxiety, sleep disruption, and impaired judgment.",
+  mechanism:"Caffeine stimulates the nervous system while benzodiazepines suppress it. This opposing action can lead to increased dosing of one or both substances and reduced awareness of impairment.",
+  whatToWatch:[
+    "Anxiety or jitteriness",
+    "Sleep disruption or insomnia",
+    "Increased benzodiazepine use to ‘calm down’",
+    "Poor concentration or judgment"
+  ],
+  harmReduction:[
+    "Reduce caffeine intake, especially later in the day",
+    "Avoid energy drinks",
+    "Use benzodiazepines only as prescribed",
+    "Seek help for severe anxiety or confusion"
+  ]
+},
+[pairKey("benzodiazepines","acetaminophen")]:{
+  severity:SEVERITY.LOW,
+  summary:"Benzodiazepines + acetaminophen is not usually a direct interaction, but sedation can increase dosing mistakes.",
+  mechanism:"Acetaminophen affects the liver, while benzodiazepines cause sedation and impaired judgment. The primary risk is unintentionally exceeding safe acetaminophen doses, especially if alcohol is also used.",
+  whatToWatch:[
+    "Taking multiple acetaminophen-containing products",
+    "Excessive drowsiness",
+    "Nausea or upper abdominal pain",
+    "Confusion about dosing schedules"
+  ],
+  harmReduction:[
+    "Do not exceed acetaminophen label limits",
+    "Avoid alcohol when using acetaminophen",
+    "Double-check combination cold/flu products",
+    "Seek help for severe abdominal pain or suspected overdose"
+  ]
+},
+
+[pairKey("benzodiazepines","nsaids")]:{
+  severity:SEVERITY.LOW,
+  summary:"Benzodiazepines + NSAIDs is not usually a direct interaction, but sedation can increase fall and injury risk.",
+  mechanism:"NSAIDs can irritate the stomach and kidneys, while benzodiazepines impair coordination and alertness. Together, the main risk is accidental injury or unrecognized side effects.",
+  whatToWatch:[
+    "Dizziness or balance problems",
+    "Stomach pain or heartburn",
+    "Increased risk of falls",
+    "Delayed recognition of NSAID side effects"
+  ],
+  harmReduction:[
+    "Avoid alcohol (bleeding risk increases)",
+    "Take NSAIDs with food",
+    "Avoid driving if sedated",
+    "Seek help for black stools, severe dizziness, or falls"
+  ]
+},
+
+[pairKey("benzodiazepines","nicotine")]:{
+  severity:SEVERITY.MOD,
+  summary:"Benzodiazepines + nicotine can increase dizziness, impaired coordination, and cardiovascular strain, while nicotine may mask sedation.",
+  mechanism:"Benzodiazepines depress the central nervous system, causing sedation and slowed reaction time. Nicotine is a stimulant that can partially mask sedation, increasing the risk of overuse, accidents, and heart strain.",
+  whatToWatch:[
+    "Dizziness or lightheadedness",
+    "Poor coordination or slowed reaction time",
+    "Palpitations or increased heart rate",
+    "Increased cigarette or vape use to counter sedation"
+  ],
+  harmReduction:[
+    "Avoid driving or risky activities",
+    "Avoid chain-smoking or heavy vaping",
+    "Use the lowest effective benzodiazepine dose",
+    "Seek help for chest pain, fainting, or severe confusion"
+  ]
+},
+[pairKey("benzodiazepines","caffeine")]:{
+  severity:SEVERITY.MOD,
+  summary:"Benzodiazepines + caffeine can create a push–pull effect, increasing anxiety, sleep disruption, and impaired judgment.",
+  mechanism:"Caffeine stimulates the nervous system while benzodiazepines suppress it. This opposing action can lead to increased dosing of one or both substances and reduced awareness of impairment.",
+  whatToWatch:[
+    "Anxiety or jitteriness",
+    "Sleep disruption or insomnia",
+    "Increased benzodiazepine use to ‘calm down’",
+    "Poor concentration or judgment"
+  ],
+  harmReduction:[
+    "Reduce caffeine intake, especially later in the day",
+    "Avoid energy drinks",
+    "Use benzodiazepines only as prescribed",
+    "Seek help for severe anxiety or confusion"
+  ]
+},
+[pairKey("benzodiazepines","acetaminophen")]:{
+  severity:SEVERITY.LOW,
+  summary:"Benzodiazepines + acetaminophen is not usually a direct interaction, but sedation can increase dosing mistakes.",
+  mechanism:"Acetaminophen affects the liver, while benzodiazepines cause sedation and impaired judgment. The primary risk is unintentionally exceeding safe acetaminophen doses, especially if alcohol is also used.",
+  whatToWatch:[
+    "Taking multiple acetaminophen-containing products",
+    "Excessive drowsiness",
+    "Nausea or upper abdominal pain",
+    "Confusion about dosing schedules"
+  ],
+  harmReduction:[
+    "Do not exceed acetaminophen label limits",
+    "Avoid alcohol when using acetaminophen",
+    "Double-check combination cold/flu products",
+    "Seek help for severe abdominal pain or suspected overdose"
+  ]
+},
+
+[pairKey("benzodiazepines","nsaids")]:{
+  severity:SEVERITY.LOW,
+  summary:"Benzodiazepines + NSAIDs is not usually a direct interaction, but sedation can increase fall and injury risk.",
+  mechanism:"NSAIDs can irritate the stomach and kidneys, while benzodiazepines impair coordination and alertness. Together, the main risk is accidental injury or unrecognized side effects.",
+  whatToWatch:[
+    "Dizziness or balance problems",
+    "Stomach pain or heartburn",
+    "Increased risk of falls",
+    "Delayed recognition of NSAID side effects"
+  ],
+  harmReduction:[
+    "Avoid alcohol (bleeding risk increases)",
+    "Take NSAIDs with food",
+    "Avoid driving if sedated",
+    "Seek help for black stools, severe dizziness, or falls"
+  ]
+},
+[pairKey("benzodiazepines","nicotine")]:{
+  severity:SEVERITY.MOD,
+  summary:"Benzodiazepines + nicotine can increase dizziness, impaired coordination, and cardiovascular strain, while nicotine may mask sedation.",
+  mechanism:"Benzodiazepines depress the central nervous system, causing sedation and slowed reaction time. Nicotine is a stimulant that can partially mask sedation, increasing the risk of overuse, accidents, and heart strain.",
+  whatToWatch:[
+    "Dizziness or lightheadedness",
+    "Poor coordination or slowed reaction time",
+    "Palpitations or increased heart rate",
+    "Increased cigarette or vape use to counter sedation"
+  ],
+  harmReduction:[
+    "Avoid driving or risky activities",
+    "Avoid chain-smoking or heavy vaping",
+    "Use the lowest effective benzodiazepine dose",
+    "Seek help for chest pain, fainting, or severe confusion"
+  ]
+},
+[pairKey("benzodiazepines","caffeine")]:{
+  severity:SEVERITY.MOD,
+  summary:"Benzodiazepines + caffeine can create a push–pull effect, increasing anxiety, sleep disruption, and impaired judgment.",
+  mechanism:"Caffeine stimulates the nervous system while benzodiazepines suppress it. This opposing action can lead to increased dosing of one or both substances and reduced awareness of impairment.",
+  whatToWatch:[
+    "Anxiety or jitteriness",
+    "Sleep disruption or insomnia",
+    "Increased benzodiazepine use to ‘calm down’",
+    "Poor concentration or judgment"
+  ],
+  harmReduction:[
+    "Reduce caffeine intake, especially later in the day",
+    "Avoid energy drinks",
+    "Use benzodiazepines only as prescribed",
+    "Seek help for severe anxiety or confusion"
+  ]
+},
+[pairKey("benzodiazepines","acetaminophen")]:{
+  severity:SEVERITY.LOW,
+  summary:"Benzodiazepines + acetaminophen is not usually a direct interaction, but sedation can increase dosing mistakes.",
+  mechanism:"Acetaminophen affects the liver, while benzodiazepines cause sedation and impaired judgment. The primary risk is unintentionally exceeding safe acetaminophen doses, especially if alcohol is also used.",
+  whatToWatch:[
+    "Taking multiple acetaminophen-containing products",
+    "Excessive drowsiness",
+    "Nausea or upper abdominal pain",
+    "Confusion about dosing schedules"
+  ],
+  harmReduction:[
+    "Do not exceed acetaminophen label limits",
+    "Avoid alcohol when using acetaminophen",
+    "Double-check combination cold/flu products",
+    "Seek help for severe abdominal pain or suspected overdose"
+  ]
+},
+
+[pairKey("benzodiazepines","nsaids")]:{
+  severity:SEVERITY.LOW,
+  summary:"Benzodiazepines + NSAIDs is not usually a direct interaction, but sedation can increase fall and injury risk.",
+  mechanism:"NSAIDs can irritate the stomach and kidneys, while benzodiazepines impair coordination and alertness. Together, the main risk is accidental injury or unrecognized side effects.",
+  whatToWatch:[
+    "Dizziness or balance problems",
+    "Stomach pain or heartburn",
+    "Increased risk of falls",
+    "Delayed recognition of NSAID side effects"
+  ],
+  harmReduction:[
+    "Avoid alcohol (bleeding risk increases)",
+    "Take NSAIDs with food",
+    "Avoid driving if sedated",
+    "Seek help for black stools, severe dizziness, or falls"
+  ]
+},
+    [pairKey("meth","thc")]:{
+      severity:SEVERITY.HIGH,
+      summary:"Meth + THC can increase anxiety/paranoia and make impairment feel unpredictable.",
+      mechanism:"Meth can intensify agitation and sleep deprivation; THC can amplify anxiety/paranoia for some, increasing distress and risky decisions.",
+      whatToWatch:[
+        "Severe anxiety/panic, paranoia",
+        "Racing heart",
+        "Confusion",
+        "Chest pain (urgent)"
+      ],
+      harmReduction:[
+        "Avoid mixing if prone to anxiety/paranoia",
+        "Hydrate and cool down; avoid more stimulants",
+        "Seek urgent help for chest pain or severe distress"
+      ]
+    },
+
+    [pairKey("meth","thc")]:{
+      severity:SEVERITY.HIGH,
+      summary:"Meth + THC can increase anxiety/paranoia and make impairment feel unpredictable.",
+      mechanism:"Meth can intensify agitation and sleep deprivation; THC can amplify anxiety/paranoia for some, increasing distress and risky decisions.",
+      whatToWatch:[
+        "Severe anxiety/panic, paranoia",
+        "Racing heart",
+        "Confusion",
+        "Chest pain (urgent)"
+      ],
+      harmReduction:[
+        "Avoid mixing if prone to anxiety/paranoia",
+        "Hydrate and cool down; avoid more stimulants",
+        "Seek urgent help for chest pain or severe distress"
+      ]
+    },
+
+    [pairKey("meth","thc")]:{
+      severity:SEVERITY.HIGH,
+      summary:"Meth + THC can increase anxiety/paranoia and make impairment feel unpredictable.",
+      mechanism:"Meth can intensify agitation and sleep deprivation; THC can amplify anxiety/paranoia for some, increasing distress and risky decisions.",
+      whatToWatch:[
+        "Severe anxiety/panic, paranoia",
+        "Racing heart",
+        "Confusion",
+        "Chest pain (urgent)"
+      ],
+      harmReduction:[
+        "Avoid mixing if prone to anxiety/paranoia",
+        "Hydrate and cool down; avoid more stimulants",
+        "Seek urgent help for chest pain or severe distress"
+      ]
+    },
+
+    [pairKey("meth","hemp_thc")]:{
+      severity:SEVERITY.HIGH,
+      summary:"Meth + hemp-derived THC can intensify anxiety/paranoia and increase cardiac strain; product strength varies so effects can be less predictable.",
+      mechanism:"High stimulation combined with psychoactive THC increases distress and risk-taking; variable potency increases unpredictability.",
+      whatToWatch:[
+        "Severe anxiety/panic, paranoia",
+        "Palpitations/racing heart",
+        "Confusion/disorientation",
+        "Chest pain (urgent)"
+      ],
+      harmReduction:[
+        "Avoid mixing",
+        "Seek urgent help for chest pain, fainting, or severe distress",
+        "Avoid further stimulant use"
+      ]
+    },
+
+    [pairKey("meth","nicotine")]:{
+      severity:SEVERITY.MOD,
+      summary:"Meth + nicotine stacks stimulants and can increase palpitations, anxiety, and craving-driven escalation.",
+      mechanism:"Both stimulate the nervous system; nicotine can cue repeated use patterns and worsen cardiovascular strain.",
+      whatToWatch:[
+        "Palpitations/racing heart",
+        "Anxiety/jitters",
+        "Overheating/dehydration",
+        "Chest pain (urgent)"
+      ],
+      harmReduction:[
+        "Avoid stacking stimulants",
+        "Hydrate and cool down",
+        "Seek urgent help for chest pain, fainting, severe shortness of breath"
+      ]
+    },
+    /* =========================
        ADDITIONS: CAFFEINE / NICOTINE / Rx STIMULANTS + THC & MORE
        ========================= */
 
@@ -604,6 +997,27 @@
         "Seek help for black stools/vomiting blood, or chest pain"
       ]
     },
+    /* =========================
+       SSRI + CAFFEINE
+       ========================= */
+
+    [pairKey("ssri","caffeine")]:{
+      severity:SEVERITY.MOD,
+      summary:"SSRIs + caffeine can increase anxiety, jitteriness, palpitations, and sleep disruption for some people.",
+      mechanism:"Caffeine is a stimulant and can amplify activation side effects that sometimes occur with SSRIs, especially early in treatment or after dose changes. Sleep disruption can further worsen anxiety and mood regulation.",
+      whatToWatch:[
+        "Jitteriness or shakiness",
+        "Increased anxiety or panic symptoms",
+        "Racing heart or palpitations",
+        "Insomnia or poor-quality sleep"
+      ],
+      harmReduction:[
+        "Reduce caffeine intake (especially energy drinks)",
+        "Avoid caffeine later in the day",
+        "Monitor symptoms during SSRI dose changes",
+        "Seek help for chest pain, fainting, or severe anxiety"
+      ]
+    },
 
     [pairKey("stimulants_rx","nicotine")]:{
       severity:SEVERITY.MOD,
@@ -638,196 +1052,8 @@
         "Seek help for severe symptoms or suspected overdose"
       ]
     },
-    /* =========================
-       METHAMPHETAMINE (CRYSTAL METH) ADDITIONS
-       ========================= */
 
-    [pairKey("meth","alcohol")]:{
-      severity:SEVERITY.HIGH,
-      summary:"Meth + alcohol can increase risky behavior and medical danger because meth masks intoxication while alcohol still impairs judgment and coordination.",
-      mechanism:"Meth increases stimulation and reduces fatigue; alcohol still impairs decision-making. This can prolong drinking and increase accidents, aggression, and dehydration.",
-      whatToWatch:[
-        "Severe agitation/impulsivity",
-        "Overheating/dehydration",
-        "Chest pain/palpitations",
-        "Blackouts or collapse"
-      ],
-      harmReduction:[
-        "Avoid mixing",
-        "Hydrate and cool down; avoid more stimulants",
-        "Seek urgent help for chest pain, collapse, severe confusion"
-      ]
-    },
 
-    [pairKey("meth","benzos")]:{
-      severity:SEVERITY.HIGH,
-      summary:"Meth + benzodiazepines is risky because each can mask the other, encouraging higher use and causing unpredictable impairment.",
-      mechanism:"Benzos may reduce anxiety/jitters; meth can hide sedation. This can drive escalation and increase blackout, accidents, and medical emergencies.",
-      whatToWatch:[
-        "Memory gaps/blackouts",
-        "Severe confusion",
-        "Falls/injuries",
-        "Sudden heavy sedation as stimulant fades"
-      ],
-      harmReduction:[
-        "Avoid mixing sedatives and stimulants",
-        "Do not drive",
-        "Seek help if unable to wake, severe confusion, or breathing seems slow"
-      ]
-    },
-
-    [pairKey("meth","opioids")]:{
-      severity:SEVERITY.HIGH,
-      summary:"Meth + opioids increases overdose risk and cardiac strain; stimulant effects can mask opioid sedation until they wear off.",
-      mechanism:"Stimulant drive can lead to redosing; as meth wears off, opioid respiratory depression can become dominant and fatal.",
-      whatToWatch:[
-        "Chest pain/palpitations",
-        "Sudden extreme sleepiness",
-        "Slow/shallow breathing",
-        "Collapse/unresponsiveness"
-      ],
-      harmReduction:[
-        "Avoid mixing",
-        "Have naloxone if opioids are involved",
-        "Call emergency services for breathing problems, collapse, or inability to wake"
-      ]
-    },
-
-    [pairKey("meth","stimulants_rx")]:{
-      severity:SEVERITY.HIGH,
-      summary:"Meth + prescription stimulants dangerously stacks stimulants and raises risk of heart attack, stroke-like events, severe anxiety, and overheating.",
-      mechanism:"Both raise blood pressure and heart rate; stacking increases cardiovascular strain and panic/agitation risk.",
-      whatToWatch:[
-        "Chest pain, fainting, severe shortness of breath",
-        "Severe agitation/panic",
-        "Overheating",
-        "Stroke-like symptoms (emergency)"
-      ],
-      harmReduction:[
-        "Avoid stacking stimulants",
-        "Seek urgent care for chest pain, fainting, or neurologic symptoms",
-        "Cool down and avoid further stimulant use"
-      ]
-    },
-
-    [pairKey("meth","mdma")]:{
-      severity:SEVERITY.HIGH,
-      summary:"Meth + MDMA is a high-risk stimulant combination with increased overheating and cardiac danger.",
-      mechanism:"Both stimulate the nervous system and raise body temperature; together they increase dehydration/heat injury and heart strain.",
-      whatToWatch:[
-        "Overheating, confusion",
-        "Chest pain/palpitations",
-        "Severe headache/vomiting",
-        "Severe: collapse, seizure, very high fever"
-      ],
-      harmReduction:[
-        "Avoid mixing stimulants",
-        "Cool down, rest, hydrate carefully",
-        "Seek emergency care for collapse, seizure, or very high temperature"
-      ]
-    },
-
-    [pairKey("meth","ketamine")]:{
-      severity:SEVERITY.HIGH,
-      summary:"Meth + ketamine can cause unpredictable impairment: high stimulation plus dissociation increases injury and emergency risk.",
-      mechanism:"Meth raises activity and risk-taking; ketamine impairs coordination and awareness, increasing accidents and medical complications.",
-      whatToWatch:[
-        "Severe confusion/dissociation",
-        "Falls/injuries",
-        "Chest pain/palpitations",
-        "Vomiting while impaired"
-      ],
-      harmReduction:[
-        "Avoid mixing",
-        "Stay in a safe environment; do not drive",
-        "Seek urgent help for chest pain, collapse, or unresponsiveness"
-      ]
-    },
-
-    [pairKey("meth","tramadol")]:{
-      severity:SEVERITY.HIGH,
-      summary:"Meth + tramadol increases seizure risk and can intensify agitation and cardiac strain.",
-      mechanism:"Tramadol lowers seizure threshold; meth is highly stimulating. Together they raise neurological and cardiovascular risk.",
-      whatToWatch:[
-        "Seizures (emergency)",
-        "Severe agitation/confusion",
-        "Chest pain/palpitations",
-        "Fainting"
-      ],
-      harmReduction:[
-        "Avoid mixing",
-        "Seek emergency help for seizures, chest pain, fainting, or severe confusion",
-        "Avoid additional stimulants"
-      ]
-    },
-
-    [pairKey("meth","ssri")]:{
-      severity:SEVERITY.HIGH,
-      summary:"Meth + SSRIs can increase agitation, insomnia, anxiety, and overall medical risk; responses vary widely.",
-      mechanism:"Meth strongly stimulates; SSRIs affect serotonin signaling. Combined use can worsen agitation and sleep deprivation, which increases risk-taking and mental distress.",
-      whatToWatch:[
-        "Severe agitation/anxiety",
-        "Insomnia for long periods",
-        "Paranoia or confusion",
-        "Chest pain/palpitations"
-      ],
-      harmReduction:[
-        "Avoid mixing",
-        "Prioritize stopping stimulation and getting help if paranoia/confusion escalates",
-        "Seek urgent care for chest pain, severe agitation, or inability to sleep for extended periods"
-      ]
-    },
-
-    [pairKey("meth","thc")]:{
-      severity:SEVERITY.HIGH,
-      summary:"Meth + THC can increase anxiety/paranoia and make impairment feel unpredictable.",
-      mechanism:"Meth can intensify agitation and sleep deprivation; THC can amplify anxiety/paranoia for some, increasing distress and risky decisions.",
-      whatToWatch:[
-        "Severe anxiety/panic, paranoia",
-        "Racing heart",
-        "Confusion",
-        "Chest pain (urgent)"
-      ],
-      harmReduction:[
-        "Avoid mixing if prone to anxiety/paranoia",
-        "Hydrate and cool down; avoid more stimulants",
-        "Seek urgent help for chest pain or severe distress"
-      ]
-    },
-
-    [pairKey("meth","hemp_thc")]:{
-      severity:SEVERITY.HIGH,
-      summary:"Meth + hemp-derived THC can intensify anxiety/paranoia and increase cardiac strain; product strength varies so effects can be less predictable.",
-      mechanism:"High stimulation combined with psychoactive THC increases distress and risk-taking; variable potency increases unpredictability.",
-      whatToWatch:[
-        "Severe anxiety/panic, paranoia",
-        "Palpitations/racing heart",
-        "Confusion/disorientation",
-        "Chest pain (urgent)"
-      ],
-      harmReduction:[
-        "Avoid mixing",
-        "Seek urgent help for chest pain, fainting, or severe distress",
-        "Avoid further stimulant use"
-      ]
-    },
-
-    [pairKey("meth","nicotine")]:{
-      severity:SEVERITY.MOD,
-      summary:"Meth + nicotine stacks stimulants and can increase palpitations, anxiety, and craving-driven escalation.",
-      mechanism:"Both stimulate the nervous system; nicotine can cue repeated use patterns and worsen cardiovascular strain.",
-      whatToWatch:[
-        "Palpitations/racing heart",
-        "Anxiety/jitters",
-        "Overheating/dehydration",
-        "Chest pain (urgent)"
-      ],
-      harmReduction:[
-        "Avoid stacking stimulants",
-        "Hydrate and cool down",
-        "Seek urgent help for chest pain, fainting, severe shortness of breath"
-      ]
-    },
     /* =========================
        FINAL COMMON INTERACTIONS
        ========================= */
@@ -1663,34 +1889,6 @@
       whatToWatch:["Loss of consciousness","Vomiting while unresponsive","Slow/irregular breathing"],
       harmReduction:["Avoid mixing","Call emergency services if unconscious or breathing is slow","Recovery position; stay with them"]
     },
-  [pairKey("benzodiazepines","nicotine")]:{
- 	 severity:SEVERITY.MOD,
- 	 summary:"Benzodiazepines + nicotine can increase dizziness, impaired coordination, and cardiovascular strain, while nicotine may mask sedation.",
- 	 mechanism:"Benzodiazepines depress the central nervous system, causing sedation and slowed reaction time. Nicotine is a stimulant that can partially mask sedation, increasing the risk of overuse, accidents, and heart strain.",
- 	 whatToWatch:["Dizziness or lightheadedness",    "Poor coordination or slowed reaction time",    "Palpitations or increased heart rate",    "Increased cigarette or vape use to counter sedation"],
- 	 harmReduction:["Avoid driving or risky activities","Avoid chain-smoking or heavy vaping", "Use the lowest effective benzodiazepine dose", "Seek help for chest pain, fainting, or severe confusion"]
-},
-[pairKey("benzodiazepines","caffeine")]:{
- 	 severity:SEVERITY.MOD,
- 		 summary:"Benzodiazepines + caffeine can create a push–pull effect, increasing anxiety, sleep disruption, and impaired judgment.",
- 	 mechanism:"Caffeine stimulates the nervous system while benzodiazepines suppress it. This opposing action can lead to increased dosing of one or both substances and reduced awareness of impairment.",
- 	 whatToWatch:["Anxiety or jitteriness","Sleep disruption or insomnia","Increased benzodiazepine use to ‘calm down’","Poor concentration or judgment"],
- 	 harmReduction:["Reduce caffeine intake, especially later in the day","Avoid energy drinks","Use benzodiazepines only as prescribed","Seek help for severe anxiety or confusion"]
-},
-[pairKey("benzodiazepines","acetaminophen")]:{
- 	 severity:SEVERITY.LOW,
- 	 summary:"Benzodiazepines + acetaminophen is not usually a direct interaction, but sedation can increase dosing mistakes.",
- 	 mechanism:"Acetaminophen affects the liver, while benzodiazepines cause sedation and impaired judgment. The primary risk is unintentionally exceeding safe acetaminophen doses, especially if alcohol is also used.",
-	  whatToWatch:["Taking multiple acetaminophen-containing products","Excessive drowsiness","Nausea or upper abdominal pain","Confusion about dosing schedules"],
-  	harmReduction:["Do not exceed acetaminophen label limits","Avoid alcohol when using acetaminophen","Double-check combination cold/flu products","Seek help for severe abdominal pain or suspected overdose"]
-},
-[pairKey("benzodiazepines","nsaids")]:{
-	  severity:SEVERITY.LOW,
- 	 summary:"Benzodiazepines + NSAIDs is not usually a direct interaction, but sedation can increase fall and injury risk.",
-	  mechanism:"NSAIDs can irritate the stomach and kidneys, while benzodiazepines impair coordination and alertness. Together, the main risk is accidental injury or unrecognized side effects.",
- 	 whatToWatch:["Dizziness or balance problems","Stomach pain or heartburn","Increased risk of falls","Delayed recognition of NSAID side effects"],
- 	 harmReduction:["Avoid alcohol (bleeding risk increases)", "Take NSAIDs with food","Avoid driving if sedated",.Seek help for black stools, severe dizziness, or falls"]
-},
     [pairKey("cocaine","benzos")]:{
       severity:SEVERITY.HIGH,
       summary:"Cocaine + benzodiazepines is risky because each can mask the other; people may take more of one or both.",
@@ -1705,6 +1903,7 @@
       whatToWatch:["Extreme drowsiness/confusion","Slow/shallow breathing","Seizure or severe agitation"],
       harmReduction:["Avoid mixing","Emergency help if breathing trouble/unresponsive/seizure","Do not add other sedatives/opioids"]
     },
+
     // --- SSRI interactions (these are the ones you missed) ---
     [pairKey("ssri","alcohol")]:{
       severity:SEVERITY.MOD,
@@ -1779,9 +1978,8 @@
       mechanism:"Responses vary; product strength and contaminants can make effects less predictable than expected.",
       whatToWatch:["Anxiety/panic","Derealization","Mood swings"],
       harmReduction:["Start low; avoid mixing substances","Stop if symptoms worsen","Seek help if severe or persistent"]
-    },
-};
-
+    }
+  };
 
   function renderUnknown(a,b){
     result.innerHTML = `
@@ -1893,10 +2091,3 @@
 </script>
 </body>
 </html>
-
-
-
-
-
-
-
